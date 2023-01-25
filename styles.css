@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav {
+    background-color: antiquewhite;
+}
+
+.section {
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: 2000ms;
+    /* background-color: yellowgreen; */
+}
+
+.section.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.intro {
+    background-image: url(./img/intro-bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.intro-first {
+    width: 30rem;
+    text-align: right;
+    background-color: hsla(0, 0%, 100%, 0.3);
+    padding: 2rem;
+    border-radius: 10px;
+}
+.intro-first img {
+    width: 30rem;
+}
+
+.intro-second {
+    width: 30rem;
+}
+.intro-second img {
+    width: 10rem;
+    aspect-ratio: 1/1;
+}
+
+.grid .section:nth-child(odd):not(.intro) {
+    background: #2d3d67;
+}
+
+/* slider */
+.wrapper {
+    background-color:#2d3d67;
+    /* position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%; */
+    width: 80vw;
+    max-width: 41em;
+    min-height: 25em;
+    border-radius: 0.6em;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    position: relative;
+    display: flex;
+}
+
+.testimonial-container {
+    width: 85%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    padding: 1.8em 1.2em;
+}
+
+.wrapper button {
+    font-size: 1.8em;
+    height: 2.2em;
+    width: 2.2em;
+    background-color: #ffffff;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border: none;
+    color:#2d3d67;
+    border: 5px solid #2d3d67;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+button#next {
+    right: -1.1em;
+}
+
+button#prev {
+    left: -1.1em;
+}
+
+.testimonial-container img {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    width: 6em;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    
+}
+.testimonial-container p {
+    color: #8c8c90;
+    text-align: center;
+    font-size: 0.9em;
+    letter-spacing: 0.05em;
+    margin: 0;
+}
+
+.p-name, .p-text {
+    padding-top: 1rem;
+}
+
+.p-text {
+    font-style: italic;
+}
+
+
+@media screen and (max-width: 650px) {
+    .wrapper {
+        font-size: 14px;
+    }
+}
