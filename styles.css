@@ -1,3 +1,11 @@
+:root {
+    --blue:hsl(223, 39%, 29%);
+    --dark-blue: hsl(228, 100%, 5%);
+    --accent: hsl(36, 100%, 40%);
+    --accent-bg:hsl(36, 100%, 40%, 0.5);
+    --accent-hover: hsla(36, 100%, 40%, 0.7);
+}
+
 * {
     scroll-behavior: smooth;
 }
@@ -104,11 +112,11 @@ section.show {
 }
 
 .intro-first a:last-child {
-    background-color: hsl(36, 100%, 40%);
+    background-color: var(--accent);
 }
 
 .intro-first a:last-child:hover {
-    box-shadow: 0px 0px 7px 2px hsla(36, 100%, 40%, 0.7);
+    box-shadow: 0px 0px 7px 2px var(--accent-hover);
 }
 
 .intro-second img {
@@ -117,10 +125,10 @@ section.show {
 }
 
 .grid section:nth-child(even):not(.intro) {
-    background: #2d3d67;
+    background: var(--blue);
 }
 .grid section:nth-child(odd):not(.intro) {
-    background: hsl(36, 100%, 40%, 0.5);
+    background: var(--accent-bg);
 }
 
 .testimonials h1{
@@ -133,7 +141,7 @@ section.show {
 }
 
 .testimonials-icon {
-    fill:rgba(0, 5, 26, 1);
+    fill:var(--dark-blue);
     vertical-align: middle;
 
 }
@@ -188,7 +196,7 @@ textarea[name=message] {
 }
 
 input[type=submit] {
-    background-color: hsl(36, 100%, 40%);
+    background-color: var(--accent);
     width: 17rem;
     padding: 1rem 1rem;
     margin: .5rem 0;
@@ -197,14 +205,14 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    box-shadow: 0px 0px 7px 2px hsla(36, 100%, 40%, 0.7);
+    box-shadow: 0px 0px 7px 2px var(--accent-hover);
 }
 
 .footer {
     display: flex;
     flex-direction: column;
     background-color: white;
-    color: #8c8c90;
+    color:var(--dark-blue);
     font-weight: 200;
 }
 
@@ -213,11 +221,18 @@ input[type=submit]:hover {
 } */
 
 .footer-icons svg {
-    padding: .5rem;
+    padding: 1rem .5rem;
 }
 
 .footer-icon {
-    fill: rgba(0, 5, 26, 1);
+    fill: var(--dark-blue);
+}
+
+.footer span:last-child {
+    color: #8c8c90;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .7em;
+
 }
 
 @media (max-width: 1000px) {
@@ -247,7 +262,7 @@ input[type=submit]:hover {
 
 /* slider */
 .wrapper {
-    background-color:rgba(0, 5, 26, 1);
+    background-color:var(--dark-blue);
     width: 80vw;
     max-width: 41em;
     min-height: 25em;
@@ -269,14 +284,14 @@ input[type=submit]:hover {
     font-size: 1.8em;
     height: 2.2em;
     width: 2.2em;
-    background-color: #ffffff;
+    background-color:var(--accent);
     position: absolute;
     margin: auto;
     top: 0;
     bottom: 0;
     border: none;
-    color:rgba(0, 5, 26, 1);
-    border: 5px solid rgba(0, 5, 26, 1);
+    color:var(--dark-blue);
+    border: 5px solid var(--dark-blue);
     cursor: pointer;
     border-radius: 50%;
 }
@@ -306,12 +321,13 @@ button#prev {
     margin: 0;
 }
 
-.p-name, .p-text {
+.p-name {
     padding-top: 1rem;
 }
 
 .p-text {
     font-style: italic;
+    padding: 3rem 1rem;
 }
 
 
