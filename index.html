@@ -8,49 +8,127 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body>    
+    <header class="intro show">
+        <div class="intro-first">
+            <div class="intro-first-info">
+                <img src="./img/logo.png" />
+                <!-- <h2>Broker nieruchomości</h2> -->
+                <!-- <p>Sprzedarzą nieruchomości zajmuję się od ponad 5 lat. Pomagam klientom indywidualnym oraz biznesowym w zakupie i
+                    sprzedaży wymarzonych lub dobrze skalkulowanych nieruchomości.</p> -->
+            </div>
+            <div class="intro-first-links">
+                <a href="#contact">About me</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div class="intro-second">
+            <img src="./img/agent3.jpg" alt="">
+        </div>
+    </header>
     <main class="container">
-        <!-- <nav>menu</nav> -->
         <div class="grid">
-            <section class="intro show">
-                <div class="intro-first">
-                    <div class="intro-first-info">
-                        <img src="./img/logo.png" />
-                        <!-- <h2>Broker nieruchomości</h2> -->
-                        <!-- <p>Sprzedarzą nieruchomości zajmuję się od ponad 5 lat. Pomagam klientom indywidualnym oraz biznesowym w zakupie i
-                            sprzedaży wymarzonych lub dobrze skalkulowanych nieruchomości.</p> -->
-                    </div>
-                    <div class="intro-first-links">
-                        <a href="#contact">About me</a>
-                        <a href="#contact">Contact</a>
-                    </div>
-                </div>
-                <div class="intro-second">
-                    <img src="./img/agent2.jpg" alt="">
-                </div>
-            </section>
             <section class="testimonials">
                 <h1>Testimonials</h1>
                 <div class="wrapper">
                     <div class="testimonial-container" id="testimonial-container"></div>
-                    <button id="prev">&lt;</button>
-                    <button id="next">&gt;</button>
+                    <button id="prev">
+                        <!-- &lt; -->
+                        <svg class="testimonials-icon" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path 
+                                d="m13.789 7.155c.141-.108.3-.157.456-.157.389 0 .755.306.755.749v8.501c0 .445-.367.75-.755.75-.157 0-.316-.05-.457-.159-1.554-1.203-4.199-3.252-5.498-4.258-.184-.142-.29-.36-.29-.592 0-.23.107-.449.291-.591 1.299-1.002 3.945-3.044 5.498-4.243z" />
+                        </svg>
+                    </button>
+                    <button id="next">
+                        <!-- &gt; -->
+                        <svg class="testimonials-icon" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path 
+                                d="m10.211 7.155c-.141-.108-.3-.157-.456-.157-.389 0-.755.306-.755.749v8.501c0 .445.367.75.755.75.157 0 .316-.05.457-.159 1.554-1.203 4.199-3.252 5.498-4.258.184-.142.29-.36.29-.592 0-.23-.107-.449-.291-.591-1.299-1.002-3.945-3.044-5.498-4.243z" />
+                        </svg>
+                    </button>
                 </div>
             </section>
-            <section class="for-sale"></section>
+            <!-- <section class="for-sale">
+                <h1>Estates 4 sale</h1>
+            </section>
             <section class="about-me">
                 <h1>About me</h1>
-            </section>
+            </section> -->
             <section id="contact" class="contact">
-                
+                <div class="contact-first">
+                    <ul class="contact-first-address">
+                        <li>
+                            <a href="tel:+503***275">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="M16 0v3h-8c-1.104 0-2 .896-2 2v17c0 1.104.896 2 2 2h8c1.104 0 2-.896 2-2v-22h-2zm-6 21h-2v-1h2v1zm0-2h-2v-1h2v1zm0-2h-2v-1h2v1zm3 4h-2v-1h2v1zm0-2h-2v-1h2v1zm0-2h-2v-1h2v1zm3 4h-2v-1h2v1zm0-2h-2v-1h2v1zm0-2h-2v-1h2v1zm0-3h-8v-8h8v8z" />
+                                </svg>
+                                <span>503***275</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:handymail@o2.pl">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.02c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 12.55l-5.992-4.57h11.983l-5.991 4.57zm0 1.288l-6-4.629v6.771h12v-6.771l-6 4.629z" />
+                                </svg>
+                                <span>handymail@o2.pl</span>
+                            </a>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 3c2.131 0 4 1.73 4 3.702 0 2.05-1.714 4.941-4 8.561-2.286-3.62-4-6.511-4-8.561 0-1.972 1.869-3.702 4-3.702zm0-2c-3.148 0-6 2.553-6 5.702 0 3.148 2.602 6.907 6 12.298 3.398-5.391 6-9.15 6-12.298 0-3.149-2.851-5.702-6-5.702zm0 8c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2zm8 6h-3.135c-.385.641-.798 1.309-1.232 2h3.131l.5 1h-4.264l-.344.544-.289.456h.558l.858 2h-7.488l.858-2h.479l-.289-.456-.343-.544h-2.042l-1.011-1h2.42c-.435-.691-.848-1.359-1.232-2h-3.135l-4 8h24l-4-8zm-12.794 6h-3.97l1.764-3.528 1.516 1.528h1.549l-.859 2zm8.808-2h3.75l1 2h-3.892l-.858-2z" />
+                            </svg>
+                            <span>Kraków - Bronowice Małe</span></li>
+                    </ul>
+                </div>
+                <div class="contact-second">
+                    <form id="contact-form">
+                        <input type="hidden" name="contact_number">
+                        <input type="text" name="user_name" placeholder="Name">
+                        <input type="email" name="user_email" placeholder="Email">
+                        <textarea name="message" placeholder="What is your business ?"></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
             </section>
-            <section class="social-media">5</section>
+            <section class="footer">
+                <span>Find me here</span>
+                <div class="footer-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                        <path class="footer-icon"
+                            d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                        <path class="footer-icon"
+                            d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.5 8.778c-.441.196-.916.328-1.414.388.509-.305.898-.787 1.083-1.362-.476.282-1.003.487-1.564.597-.448-.479-1.089-.778-1.796-.778-1.59 0-2.758 1.483-2.399 3.023-2.045-.103-3.86-1.083-5.074-2.572-.645 1.106-.334 2.554.762 3.287-.403-.013-.782-.124-1.114-.308-.027 1.14.791 2.207 1.975 2.445-.346.094-.726.116-1.112.042.313.978 1.224 1.689 2.3 1.709-1.037.812-2.34 1.175-3.647 1.021 1.09.699 2.383 1.106 3.773 1.106 4.572 0 7.154-3.861 6.998-7.324.482-.346.899-.78 1.229-1.274z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                        <path class="footer-icon"
+                            d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                        <path class="footer-icon"
+                            d="M16.23 7.102c-2.002-.136-6.462-.135-8.461 0-2.165.148-2.419 1.456-2.436 4.898.017 3.436.27 4.75 2.437 4.898 1.999.135 6.459.136 8.461 0 2.165-.148 2.42-1.457 2.437-4.898-.018-3.436-.271-4.75-2.438-4.898zm-6.23 7.12v-4.444l4.778 2.218-4.778 2.226zm2-12.222c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                        <path class="footer-icon"
+                            d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.082c1.602 0 1.792.006 2.425.035 1.627.074 2.385.845 2.46 2.459.028.633.034.822.034 2.424s-.006 1.792-.034 2.424c-.075 1.613-.832 2.386-2.46 2.46-.633.028-.822.035-2.425.035-1.602 0-1.792-.006-2.424-.035-1.63-.075-2.385-.849-2.46-2.46-.028-.632-.035-.822-.035-2.424s.007-1.792.035-2.424c.074-1.615.832-2.386 2.46-2.46.632-.029.822-.034 2.424-.034zm0-1.082c-1.63 0-1.833.007-2.474.037-2.18.1-3.39 1.309-3.49 3.489-.029.641-.036.845-.036 2.474 0 1.63.007 1.834.036 2.474.1 2.179 1.31 3.39 3.49 3.49.641.029.844.036 2.474.036 1.63 0 1.834-.007 2.475-.036 2.176-.1 3.391-1.309 3.489-3.49.029-.64.036-.844.036-2.474 0-1.629-.007-1.833-.036-2.474-.098-2.177-1.309-3.39-3.489-3.489-.641-.03-.845-.037-2.475-.037zm0 2.919c-1.701 0-3.081 1.379-3.081 3.081s1.38 3.081 3.081 3.081 3.081-1.379 3.081-3.081c0-1.701-1.38-3.081-3.081-3.081zm0 5.081c-1.105 0-2-.895-2-2 0-1.104.895-2 2-2 1.104 0 2.001.895 2.001 2s-.897 2-2.001 2zm3.202-5.922c-.397 0-.72.322-.72.72 0 .397.322.72.72.72.398 0 .721-.322.721-.72 0-.398-.322-.72-.721-.72z" />
+                    </svg>
+                </div>
+                <span>Made by *me* 2023. All Rights reserved.</span>
+            </section>
         </div>
     </main>
 </body>
-<script src="index.js"></script>
-    <script src="slider.js"></script>
-
+<script src="./js/index.js"></script>
+<script src="./js/slider.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="./js/email.js"></script>
 </html>
+
