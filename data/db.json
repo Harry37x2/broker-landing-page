@@ -19,5 +19,40 @@
             "date": "10.06.2021",
             "rate": 5,
             "text": "Bardzo rzetelny, pracowity i aktywny. Wyjątkowo komunikatywny i zaangażowany, zdeterminowany dopełnić podjętych zobowiązań. Mogę polecić każdemu jako wysokiej klasy specjalistę."
+        },
+        {
+            "id": 4,
+            "name": "Marcin",
+            "date": "24.04.2019",
+            "rate": 5,
+            "text": "Pełen profesjonalizm i niespotykane pokłady cierpliwości to najważniejsze cechy Pana Bartosza. Bardzo miły i spokojny. Szczerze polecam współpracę."
+        },
+        {
+            "id": 5,
+            "name": "Krystian",
+            "date": "05.05.2019",
+            "rate": 5,
+            "text": "Polecam Agenta pełen profesjonalizm wszystko jak najbardziej na tak"
+        },
+        {
+            "id": 6,
+            "name": "Marcin",
+            "date": "15.02.2021",
+            "rate": 5,
+            "text": "świetny !.. profesjonalny, spokojny i rzeczowy"
+        },
+        {
+            "id": 7,
+            "name": "Grzegorz",
+            "date": "20.12.2018",
+            "rate": 5,
+            "text": "Same plusy! Szczerze polecam tego Agenta!!!"
+        },
+        {
+            "id": 8,
+            "name": "Justyna",
+            "date": "28.11.2017",
+            "rate": 5,
+            "text": ""
         }
 ]
