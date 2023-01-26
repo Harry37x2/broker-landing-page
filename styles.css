@@ -17,7 +17,7 @@ section {
     transform: translateY(-100px);
     opacity: 0;
     transition: 2000ms;
-    padding: 3rem;
+    padding: 0 3rem;
     /* background-color: yellowgreen; */
 }
 
@@ -67,7 +67,7 @@ section.show {
 }
 
 .intro-first-links {
-    margin-top: 5rem;
+    margin-top: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -113,17 +113,18 @@ section.show {
 }
 
 @media (max-width: 1000px) {
-    .intro-second img {
-        height: 15rem;
-        border-radius: 50%;
+    section {
+        padding: 3rem;
     }
-
+    .intro {
+        flex-direction: column-reverse;
+    }
     .intro-first-links {
         margin-top: 2rem;
     }
-
-    .intro {
-        flex-direction: column-reverse;
+    .intro-second img {
+        height: 15rem;
+        border-radius: 50%;
     }
 }
 
@@ -161,8 +162,8 @@ section.show {
     top: 0;
     bottom: 0;
     border: none;
-    color:rgba(0, 5, 26, 1);;
-    border: 5px solid rgba(0, 5, 26, 1);;
+    color:rgba(0, 5, 26, 1);
+    border: 5px solid rgba(0, 5, 26, 1);
     cursor: pointer;
     border-radius: 50%;
 }
