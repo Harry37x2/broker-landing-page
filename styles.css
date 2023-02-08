@@ -21,10 +21,11 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    background: var(--linear-gradient-2);
 }
 
 nav {
-    background-color: antiquewhite;
+    background-color: white;
 }
 
 header {
