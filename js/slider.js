@@ -60,9 +60,9 @@ prevBtn.addEventListener("click", () => {
 let displayTestimonial = () => {
   testimonialContainer.innerHTML = `
     <img src="img/img${payload[i].id}.jpg"/>
+    <p class="p-text">${payload[i].text}</p>
     <p class="p-name">${payload[i].name}</p>
     <p>${payload[i].date}</p>
-    <p class="p-text">${payload[i].text}</p>
   `;};
   displayTestimonial();
 };
