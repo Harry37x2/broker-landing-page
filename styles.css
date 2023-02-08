@@ -1,5 +1,5 @@
 :root {
-    --blue:rgba(0, 134, 221, 1) 100%;
+    --blue:rgba(0, 134, 221, 1);
     --dark-blue: rgb(0, 5, 26,1);
     --accent: hsl(36, 100%, 40%);
     --accent-hover: hsla(36, 100%, 40%, 0.7);
@@ -127,10 +127,10 @@ section.show {
     border-radius: 50%;
 }
 
-.grid section:nth-child(even):not(.intro) {
+/* .grid section:nth-child(even):not(.intro) {
     background: rgba(0, 134, 221, 1) 100%;
 }
-/* .grid section:nth-child(odd):not(.intro) {
+.grid section:nth-child(odd):not(.intro) {
     background: linear-gradient(180deg, rgba(0, 5, 26, 1) 0%, rgba(0, 134, 221, 1) 100%);
 } */
 
@@ -204,7 +204,8 @@ section.show {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 3rem;;
+    background-color: var(--blue);
 }
 
 .contact-first {
